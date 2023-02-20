@@ -184,7 +184,7 @@ console.log(1, 2, "字面量", true, null);
 
 上述代码的最终执行结果：在控制台输出： 1 2 '字面量' true null
 
-![变量的使用](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220000240481.png)
+![字面量](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219234745504.png)
 
 
 
@@ -225,7 +225,7 @@ console.log(age);
 
 上述代码最终执行结果：在控制台输出： 18  20
 
-![变量的使用](https://lcdn.jsdelivr.net/gh/DemonForNi/JS_Basics/image/image-20230220000240481.png)
+![变量的使用](https://github.com/DemonForNi/JS_Basics/image/image-20230220000240481.png)
 
 
 
