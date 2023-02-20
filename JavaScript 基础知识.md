@@ -170,7 +170,7 @@ console.log(654321);
 
 
 
-### 字面量 和 变量
+### 四、字面量 和 变量
 
 #### 字面量：
 
@@ -225,11 +225,62 @@ console.log(age);
 
 上述代码最终执行结果：在控制台输出： 18  20
 
-![变量的使用](https://github.com/DemonForNi/JS_Basics/blob/main/image-20230220000240481.png)
+![变量的使用](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230220000240481.png)
 
 18 为变量 `age ` 在首次声明并赋值时存储的值，20 为变量 `age` 被修改后存储的值。
 
 
 
+#### 变量的内存结构：
 
+变量中不存储任何值，而是存储 **值的内存地址** 。
+
+```js
+let a = "变量"
+let b = "变量"
+let c = d = 123
+let e = f = false
+```
+
+| 变量名称 | 值 (值的内存地址) |
+| :------- | ----------------- |
+| a        | 0x11              |
+| b        | 0x11              |
+| c        | 0x22              |
+| d        | 0x22              |
+| e        | 0x33              |
+| f        | 0x33              |
+
+| 值     | 内存地址 |
+| ------ | :------- |
+| "变量" | 0x11     |
+| 123    | 0x22     |
+| false  | 0x33     |
+
+------
+
+
+
+
+
+### 五、常量
+
+JavaScript 中使用 **const** 来声明常量，常量在声明时必须同时赋值，并且 **只能赋值一次** ，不可以进行二次赋值，否则会导致程序报错。
+
+JavaScript 中除了常规的常量(圆周率 PI)外，还有一些对象类型的数据也会声明为常量，人为的让这些数据不被修改。
+
+```js
+const Pi = 3.1415;
+Pi = 10;  // Uncaught TypeError: Assignment to constant variable.
+
+console.log(Pi);
+```
+
+------
+
+
+
+
+
+### 六、标识符
 
