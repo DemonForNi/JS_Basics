@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 内部 JS -->
+  <script type="text/javascript">
+    console.log('内部书写');
+  </script>
+  <!-- 外部 JS -->
+  <script src="./script/script.js"></script>
+</head>
+
+<body>
+
+  <!-- 指定属性中的 JS -->
+  <button onclick="console.log('点击');">点击</button>
+  <button onmouseenter="console.log('鼠标进入');">鼠标进入</button>
+  <hr>
+  <a href="javascript:console.log('跳转');">超链接</a>
+  <hr>
+  <a href="javascript:;">超链接</a>
+</body>
+
+</html>
