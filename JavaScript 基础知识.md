@@ -225,7 +225,7 @@ console.log(age);
 
 上述代码最终执行结果：在控制台输出： 18  20
 
-![变量的使用](https://github.com/DemonForNi/JS_Basics/blob/main/image-20230220000240481.png)
+![变量的使用](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220000240481.png)
 
 18 为变量 `age ` 在首次声明并赋值时存储的值，20 为变量 `age` 被修改后存储的值。
 
