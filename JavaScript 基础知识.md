@@ -14,7 +14,7 @@ JavaScript 中经常使用的输出语句有三种：
 alert('输出方式一');
 ```
 
-![image-20230219222202586](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230219222202586.png)
+![输出方式一](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219222016057.png)
 
 
 
@@ -26,7 +26,7 @@ alert('输出方式一');
 console.log('输出方法二');
 ```
 
-![image-20230219222056930](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230219222056930.png)
+![输出方式二](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219222056930.png)
 
 
 
@@ -38,7 +38,7 @@ console.log('输出方法二');
 document.write('输出方法三');
 ```
 
-![image-20230219222135513](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230219222135513.png)
+![输出方式三](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219222135513.png)
 
 ------
 
@@ -146,7 +146,7 @@ console.log
 
 以上两段代码的最终执行结果都是相同的，都会在控制台中输出： 123456
 
-![image-20230219230931793](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230219230931793.png)
+![多个空格和换行被忽略](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219230931793.png)
 
 
 
@@ -162,7 +162,7 @@ console.log(654321);
 
 以上两段代码的最终执行结果都是相同的，都会在控制台中输出： 654321
 
-![image-20230219233319216](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230219233319216.png)
+![语句分号结束](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219233319216.png)
 
 ------
 
@@ -184,7 +184,7 @@ console.log(1, 2, "字面量", true, null);
 
 上述代码的最终执行结果：在控制台输出： 1 2 '字面量' true null
 
-![image-20230219234745504](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230219234745504.png)
+![字面量](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230219234745504.png)
 
 
 
