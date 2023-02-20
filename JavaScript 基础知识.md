@@ -8,7 +8,7 @@
 
 JS 中经常使用的输出语句有三种：
 
-##### `alert` ：
+##### alert ：
 
 在浏览器中以 **页面警示框** 的形式弹出展示输出。
 
@@ -20,7 +20,7 @@ alert('输出方式一');
 
 
 
-##### `console.log()`：
+##### console.log() ：
 
 在浏览器中以 **浏览器控制台 **的形式展示输出。
 
@@ -32,7 +32,7 @@ console.log('输出方法二');
 
 
 
-##### `document.write()` ：
+##### document.write() ：
 
 在浏览器中以 **浏览器页面内容(页面文档)** 的形式展示输出。
 
@@ -52,9 +52,9 @@ document.write('输出方法三');
 
 JS 代码的编写位置有三种：
 
-##### 内部 `JS`：
+##### 内部  JS ：
 
-编写在网页内部的 `script` 标签中
+编写在网页内部的 script 标签中
 
 ```html
 <script type="text/javascript">
@@ -62,13 +62,13 @@ JS 代码的编写位置有三种：
 </script>
 ```
 
-`type="text/javascript"` 可省略不写，`type` 默认值为 `text/javascript`
+type="text/javascript"  可省略不写，type 默认值为 text/javascript
 
 
 
-##### 外部 `Js`：
+##### 外部  JS ：
 
-编写在网页外部的 `JS` 文件中，在使用时通过 `script` 标签引入
+编写在网页外部的 JS 文件中，在使用时通过 script 标签引入
 
 ```html
 <script src="./script/script.js"></script>
@@ -76,7 +76,7 @@ JS 代码的编写位置有三种：
 
 
 
-##### 指定属性中的 `JS`：
+##### 指定属性中的  JS ：
 
 编写在网页内部标签的指定属性中
 
@@ -103,7 +103,7 @@ JS 代码中有以下一些基础语法：
 
 注释分为 **多行注释** 和 **单行注释** ，注释中的内容会被解释器 **忽略** ，可以通过注释对代码进行解释说明，也可以通过注释来注释不需要或者不被执行的代码。
 
-多行注释 ：多行注释的注释内容写在 `/* */` 内部
+多行注释 ：多行注释的注释内容写在  /*  */  内部
 
 ```js
 /*
@@ -205,11 +205,11 @@ weight = 75;
 
 ##### 变量的使用：
 
-变量的声明：`var`  变量名  /  `let`  变量名
+变量的声明：var  变量名  /  let  变量名
 
-变量的复制：变量名 = `XXXX`
+变量的复制：变量名 = XXXX
 
-变量的声明和赋值可以进行：`var`  变量名 = `XXXX`   /   `let`  变量名 = `XXXX`
+变量的声明和赋值可以进行：var  变量名 = XXXX   /   let  变量名 = XXXX
 
 ```js
 var a;
@@ -305,6 +305,8 @@ let $_aaa = 123;
 let $123_aaa = 123;
 ```
 
+
+
 不遵守标识符命名规范将会导致代码报错。
 
 ```js
@@ -324,9 +326,199 @@ alert(123); // Uncaught TypeError: alert is not a function
 
 ### 数据类型
 
-### 一、数值 Number
+#### 一、数值
 
-JS 中所有的整数和浮点数都是 Number 类型
+##### Number ( 数值 )
+
+JS 中所有的整数和浮点数都是 Number 类型。
+
+```js
+let a = 10;
+let b = 3.1415;
+```
+
+
+
+ JS 中的数值不会无限大，当数值超过一定范围后会显示近似值。
+
+```js
+let a = 99999999999999911;
+console.log(a); // 99999999999999900
+
+let b = 1.111111111111111111111111111;
+console.log(b); // 1.1111111111111112
+
+let c = 0.00000000000000000001;
+console.log(c); // 1e-20
+```
+
+控制台中输出的 a 值为： 99999999999999900
+
+控制台中输出的 b 值为： 1.1111111111111112
+
+控制台中输出的 c 值为： 1e-20
+
+![image-20230220222316289](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220222316289.png)
+
+
+
+`Infinity` 是一个特殊的数值，表示为 **无穷 **。
+
+```js
+let b = 99999 ** 99999; // ** 为幂运算
+console.log(b); // Infinity
+```
+
+此时，控制台中输出的 b 值为：`Infinity`
+
+![image-20230220221053676](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220221053676.png)
+
+**！！注意：在 JS 中进行一些精度比较高的运算时要十分注意**
+
+
+
+NaN 是一个特殊的数值，表示 **不是一个数值** ( Not  a  Number ) ，非法数值。
+
+```js
+let s = 1 - "aaa";
+console.log(s); // NaN
+```
+
+此时，控制台中输出的 s 的值为：NaN
+
+![image-20230220223317226](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220223317226.png)
+
+
+
+##### BigInt ( 大整数 )
+
+BigInt  用来表示一些比较大的整数，使用 n 结尾。BigInt 可以表示的数值范围 **依据内存大小判断** 。
+
+```js
+let bigInt = 99999999999999999999999999999n;
+console.log(bigInt); // 99999999999999999999999999999n
+```
+
+此时，控制台中输出的 bigInt 的值为：99999999999999999999999999999n
+
+![image-20230220224436686](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220224436686.png)
+
+
+
+##### 进制数值
+
+二进制数值：以  0b 开头
+
+八进制数值：以 0o  开头
+
+十六进制数值：以  0x  开头
+
+```js
+let i = 0b1010;
+let j = 0o10;
+let k = 0xff;
+console.log(i, j, k);
+```
+
+数值在表示时可以使用其他进制的表示方法，最终在控制台输出的结果都是十进制的数值。
+
+此时，控制台中输出的  i  j  k  的值为：10	8	255
+
+![image-20230220225314633](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220225314633.png)
+
+------
+
+
+
+
+
+#### 二、类型检查  typeof  运算符
+
+typeof 运算符 用来检查不同的值的类型，根据不同的值返回不同的结果。
+
+```js
+let a = 10;
+let b = 10n;
+console.log(typeof a);
+console.log(typeof b);
+```
+
+控制台中输出：
+
+a 变量的值的类型：number
+
+b 变量的值的类型：bigint
+
+![image-20230220230841439](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220230841439.png)
+
+------
+
+
+
+
+
+#### 三、字符串
+
+##### 字符串
+
+在 JS 中使用 **单引号** 或 **双引号** 来表示字符串。
+
+```js
+let str = "AAAA";
+let str2 = '你好！';
+console.log(str);
+console.log(str2);
+```
+
+控制台中输出：
+
+str ：AAAA		str2 ：你好！
+
+![image-20230220231519807](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220231519807.png)
+
+
+
+##### 转义字符	\
+
+\\"  ==>  "		\\'  ==>  '		\\\  ==>  \		\\t  ==>  制表符		\\n  ==>  换行
+
+```js
+let a = '这是一个\"字符串';
+console.log(a);
+```
+
+控制台中输出：这是一个\"字符串
+
+![image-20230220232343254](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220232343254.png)
+
+
+
+##### 模板字符串
+
+使用反单引号 ` 来表示模板字符串。模板字符串中可以 **嵌入** 变量。
+
+```js
+let name = 'AAAA';
+let strs = `你好！${name}`;
+console.log(strs);
+```
+
+控制台中输出：你好！AAAA
+
+![image-20230220233524842](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230220233524842.png)
+
+
+
+**使用 typeof 检查一个字符串时会返回 string**
+
+```js
+let b = "aaaaa";
+console.log(typeof b);
+```
+
+控制台中输出：string
+
+![image-20230220233621446](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230220233621446.png)
 
 
 
