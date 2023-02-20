@@ -358,7 +358,7 @@ console.log(c); // 1e-20
 
 控制台中输出的 c 值为： 1e-20
 
-![image-20230220222316289](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220222316289.png)
+![image-20230220222316289](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220222316289.png)
 
 
 
@@ -371,7 +371,7 @@ console.log(b); // Infinity
 
 此时，控制台中输出的 b 值为：`Infinity`
 
-![image-20230220221053676](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220221053676.png)
+![image-20230220221053676](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220221053676.png)
 
 **！！注意：在 JS 中进行一些精度比较高的运算时要十分注意**
 
@@ -386,7 +386,7 @@ console.log(s); // NaN
 
 此时，控制台中输出的 s 的值为：NaN
 
-![image-20230220223317226](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220223317226.png)
+![image-20230220223317226](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220223317226.png)
 
 
 
@@ -401,7 +401,7 @@ console.log(bigInt); // 99999999999999999999999999999n
 
 此时，控制台中输出的 bigInt 的值为：99999999999999999999999999999n
 
-![image-20230220224436686](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220224436686.png)
+![image-20230220224436686](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220224436686.png)
 
 
 
@@ -424,7 +424,7 @@ console.log(i, j, k);
 
 此时，控制台中输出的  i  j  k  的值为：10	8	255
 
-![image-20230220225314633](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220225314633.png)
+![image-20230220225314633](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220225314633.png)
 
 ------
 
@@ -449,7 +449,7 @@ a 变量的值的类型：number
 
 b 变量的值的类型：bigint
 
-![image-20230220230841439](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220230841439.png)
+![image-20230220230841439](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220230841439.png)
 
 ------
 
@@ -474,7 +474,7 @@ console.log(str2);
 
 str ：AAAA		str2 ：你好！
 
-![image-20230220231519807](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220231519807.png)
+![image-20230220231519807](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220231519807.png)
 
 
 
@@ -489,7 +489,7 @@ console.log(a);
 
 控制台中输出：这是一个\"字符串
 
-![image-20230220232343254](https://raw.githubusercontent.com/DemonForNi/JS_Basics/blob/main/image/image-20230220232343254.png)
+![image-20230220232343254](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220232343254.png)
 
 
 
@@ -505,7 +505,7 @@ console.log(strs);
 
 控制台中输出：你好！AAAA
 
-![image-20230220233524842](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230220233524842.png)
+![image-20230220233524842](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220233524842.png)
 
 
 
@@ -518,7 +518,7 @@ console.log(typeof b);
 
 控制台中输出：string
 
-![image-20230220233621446](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230220233621446.png)
+![image-20230220233621446](https://github.com/DemonForNi/JS_Basics/blob/main/image/image-20230220233621446.png)
 
 
 
