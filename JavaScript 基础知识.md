@@ -225,7 +225,7 @@ console.log(age);
 
 上述代码最终执行结果：在控制台输出： 18  20
 
-![变量的使用](https://github.com/DemonForNi/JS_Basics/blob/main/image-20230220000240481.png)
+![字面量](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230220000240481.png)
 
 
 
